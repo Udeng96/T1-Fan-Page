@@ -1,0 +1,370 @@
+
+header .main-menu .item .item__contents{
+  width: 100%;
+  height: 1000px;
+  position: fixed;
+  left: 0;
+  display: none;
+}
+
+.main-menu .item.first:hover .item__contents{
+  width: 980px;
+  left: -90px;
+  height: 1000px;
+  display: block;
+  background-color: black;
+}
+
+/* schedule menu */
+
+.item.first .item__contents .menu_trophy{
+  position: absolute;
+  top: 400px;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.item.first .item__contents .menu_match_schedule{
+  position: absolute;
+  top: 380px;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  opacity: .5;
+}
+
+.item.first .item__contents .menu_lck_summer_logo{
+  position: absolute;
+  left: 45%;
+  top: 80px;
+  transform: translate(-50%, -50%);
+}
+
+
+/* home menu */
+
+.main-menu .item.second:hover .item__contents{
+  width: 980px;
+  left: -426px;
+  height: 1000px;
+  display: block;
+  background-color: black;
+}
+
+/* facebook_icon */
+
+.item.second .item__contents .menu_facebook{
+  margin-top: 20%;
+  position: absolute;
+  padding-bottom: 0px;
+  left: 15px;
+  width: 200px;
+  height: 200px;
+  transition: .4s;
+}
+
+.item.second .item__contents .front_face,
+.item.second .item__contents .back_face{
+  backface-visibility: hidden;
+  position: absolute;
+  transition: .1s;
+  width: 210px;
+  height: 210px;
+}
+
+.front_face{
+  transform: rotateY(0deg);
+}
+
+.item.second .item__contents .menu_facebook:hover .front_face{
+  z-index:1;
+  cursor:pointer;
+}
+
+.item.second .item__contents .menu_facebook:hover .back_face{
+  display: none;
+}
+
+.item.second .item__contents .menu_facebook .title_face{
+  display: none;
+  z-index: 1;
+  font-family: sans-serif;
+  font-size: 20px;
+  position: absolute;
+  margin: auto;
+  margin-left: 30px;
+  margin-top: 50%;
+  opacity: 1;
+  color: aliceblue;
+}
+
+.item.second .item__contents .menu_facebook:hover .title_face{
+  z-index: 1;
+  font-size: 20px;
+  position: absolute;
+  margin: auto;
+  margin-top: 100%;
+  opacity: 1;
+  color: aliceblue;
+  display: block;
+  margin-left: 25px;
+}
+
+
+/* youtube_icon */
+
+
+.item.second .item__contents .menu_youtube{
+  margin-top: 20%;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  margin-left: 250px;
+  padding-bottom: 0px;
+  
+}
+
+.item.second .item__contents .front_you,
+.item.second .item__contents .back_you{
+  backface-visibility: hidden;
+  position: absolute;
+  transition: .2s;
+  width: 210px;
+  height: 210px;
+}
+
+.front_you{
+  transform: rotateY(0deg);
+}
+
+.item.second .item__contents .menu_youtube:hover .front_you{
+  z-index:1;
+  cursor:pointer;
+}
+
+.item.second .item__contents .menu_youtube:hover .back_you{
+  display: none;
+}
+
+.item.second .item__contents .menu_youtube .title_you{
+  display: none;
+  z-index: 1;
+  font-family: sans-serif;
+  font-size: 20px;
+  position: absolute;
+  margin: auto;
+  margin-left: 30px;
+  margin-top: 50%;
+  opacity: 1;
+  color: aliceblue;
+}
+
+.item.second .item__contents .menu_youtube:hover .title_you{
+  z-index: 1;
+  font-family: 'fantasy';
+  font-size: 20px;
+  position: absolute;
+  margin: auto;
+  margin-top: 105%;
+  opacity: 1;
+  color: aliceblue;
+  display: block;
+  margin-left: 35px;
+  
+}
+
+/* twitter_icon */
+
+.item.second .item__contents .menu_twitter{
+  margin-top: 19.5%;
+  position: absolute;
+  padding-bottom: 0;
+  width: 205px;
+  height: 205px;
+  right: 0;
+  margin-right: 150px;
+}
+
+.item.second .item__contents .front_twit,
+.item.second .item__contents .back_twit{
+  backface-visibility: hidden;
+  position: absolute;
+  transition: .1s;
+  width: 210px;
+  height: 210px;
+}
+
+.item.second .item__contents .menu_twitter:hover .front_twit{
+  z-index:1;
+  cursor:pointer;
+}
+
+.item.second .item__contents .menu_twitter:hover .back_twit{
+  cursor:pointer;
+  display: none;
+}
+
+.item.second .item__contents .menu_twitter .title_twit{
+  display: none;
+  z-index: 1;
+  font-family: sans-serif;
+  font-size: 20px;
+  position: absolute;
+  margin: auto;
+  margin-left: 30px;
+  margin-top: 100%;
+  opacity: 1;
+  color: aliceblue;
+}
+
+.item.second .item__contents .menu_twitter:hover .title_twit{
+  z-index: 1;
+  font-size: 20px;
+  position: absolute;
+  margin: auto;
+  margin-top: 105%;
+  opacity: 1;
+  color: aliceblue;
+  display: block;
+  margin-left: 40px;
+}
+
+/* menu_instagram */
+
+.item.second .item__contents .menu_instagram{
+  margin-top: 20%;
+  position: absolute;
+  padding-bottom: 0;
+  right: 400px;
+  width: 200px;
+  height: 200px;
+}
+
+.item.second .item__contents .menu_instagram .front_insta,
+.item.second .item__contents .menu_instagram .back_insta{
+  position: absolute;
+  transition: .5s;
+  width: 210px;
+  height: 210px;
+}
+
+.item.second .item__contents .menu_instagram:hover .front_insta{
+  z-index:1;
+  cursor:pointer;
+}
+
+.item.second .item__contents .menu_instagram:hover .back_insta{
+  cursor:pointer;
+  transition: .5s;
+  display: none;
+}
+
+.item.second .item__contents .menu_instagram .title_insta{
+  display: none;
+  z-index: 1;
+  font-family: sans-serif;
+  font-size: 20px;
+  position: absolute;
+  margin: auto;
+  margin-left: 30px;
+  margin-top: 50%;
+  opacity: 1;
+  color: aliceblue;
+}
+
+.item.second .item__contents .menu_instagram:hover .title_insta{
+  z-index: 1;
+  font-family: 'fantasy';
+  font-size: 20px;
+  position: absolute;
+  margin: auto;
+  margin-top: 105%;
+  opacity: 1;
+  color: aliceblue;
+  display: block;
+  margin-left: 11px;
+  
+}
+
+/* member menu */
+
+
+.main-menu .item.third:hover .item__contents{
+  width: 980px;
+  left: -726px;
+  height: 1000px;
+  display: block;
+  background-color: black;
+}
+
+.item.third .item__contents .menu_member-image{
+  position: absolute;
+  top: 280px;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.item.third .item__contents .menu_riot-logo{
+  position: absolute;
+  width: 600px;
+  height: 200px;
+  top: 180px;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.item.third .item__contents .menu_member-font{
+  position: absolute;
+  top: 500px;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  opacity: .9;
+}
+
+/* board */
+
+.board{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.board .inner{
+  position: relative;
+  height: 100%;
+  display: flex;
+}
+
+/* main logo */
+
+.main_youtube{
+  position: absolute;
+  top: 30%;
+  left: 55px;
+  height: 300px;
+  
+}
+
+.main_youtube .youtube__area{
+  width: 1000px;
+  left: 27%;
+  position: absolute;
+
+}
+
+.main_youtube .youtube__area::before{ /*가상요소선택자*/
+  content: "";
+  display: block;
+  width: 100;
+  height: 0;
+  padding-top: 56.25%; /*16:9 비율*/
+}
+
+.main_youtube .youtube__area #video_player{
+  width: 100%;
+  height: 95%;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}

@@ -1,0 +1,151 @@
+
+/* Calendar */
+
+.calendar {
+  margin-top: 270px;
+  height: 693px;
+  background-color: black;
+  position: relative;
+  transition: height .4s;
+  /*토글 버튼을 눌렀을 때 열고 닫히기*/
+  overflow: hidden;
+
+}
+
+.calendar .swiper-container {
+  width: calc(819px*3 + 20px);
+  /*특정한 단위를 계산*/
+  height: 553px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: calc((819px*3 + 20px)/-2);
+  /*가로너비 절반만큼* 즉 왼쪽으로 절반만큼 밀어놓은것을 container의 절반만큼을 끌어온 것*/
+  /*따라서 이 container에서는 확대를 해도 container는 정중앙에 위치하게된다.*/
+
+}
+
+.calendar .swiper-slide {
+  opacity: .5;
+  transition: opacity 1s;
+  position: relative;
+}
+
+.calendar .swiper-slide-active {
+  opacity: 1;
+  /*swiper-slide-active는 정가운데 있는 이미지인데 이 이미지만 불투명하게 해놓는 작업 */
+}
+
+.calendar .swiper-prev,
+.calendar .swiper-next {
+  width: 42px;
+  height: 42px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  position: absolute;
+  top: 300px;
+  z-index: 1;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .4s;
+}
+
+.calendar .swiper-prev {
+  left: 50%;
+  margin-left: -480px;
+}
+
+.calendar .swiper-next {
+  right: 50%;
+  margin-right: -480px;
+}
+
+.calendar .swiper-prev:hover,
+.calendar .swiper-next:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.watch_game{
+  left: 0;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 9;
+  display: block;
+}
+
+.watch_game_front{
+  width: 100%;
+  display: flex;
+  position: absolute;
+  margin-top: 75%;
+  align-content: center;
+  justify-content: center;
+  
+}
+
+.watch_game_front .btn:hover {
+  color: black;
+}
+
+.twitch.btn{
+  margin-right: 50px;
+}
+.interpark.btn{
+  margin-left: 50px;
+}
+
+.watch_game_back{
+  width: 100%;
+  display: flex;
+  position: absolute;
+  margin-top: 75%;
+  align-content: center;
+  justify-content: center;
+  color: black;
+}
+
+
+.watch_game_back .btn {
+  opacity: 0;
+}
+
+
+.twitch_back.btn{
+  margin-right: 50px;
+}
+
+.interpark_back.btn{
+  margin-left: 50px;
+}
+
+.score_info{
+  color: #fff;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  margin-top: 69%;
+  align-content: center;
+  justify-content: center;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.ticket_info{
+  color: #f3002f;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  margin-top: 72%;
+  align-content: center;
+  justify-content: center;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: bold;
+}
+

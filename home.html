@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T1 Fan Page</title>
+
+  <link rel="icon" href="./images/logo_zLe_icon.ico">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./common/common.css">
+
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+  integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"
+  integrity="sha512-kSI9CgGh60rJbNVeMJvfNX0UTKAq8LEOea/yKJQbFpIroxT7bf9/zUFXbnfsQP5F6xlOOHtCfBPgsE1ceiHnRw=="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+  integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+  crossorigin="anonymous"></script>
+
+  <script src="./common/common.js"></script>
+</head>
+
+<body>
+
+  <!-- Header -->
+
+  <header>
+    <div class="inner">
+
+      <a href="./index.html" >
+        <img src="./images/titlelogo.png" alt="titlelogo" class="logo"/>
+      </a>
+
+      <!-- 상단메뉴 -->
+      <ul class="main-menu">
+
+        <!-- schedule -->
+        <li class="item first">
+          <a href="./schedule/schedule.html"><span title="SCHEDULE" class="menu_schedule">SCHEDULE</span></a>
+          <div class="item__contents">
+            <div class="contents">
+              <div class="inner">
+                <img src="./images/main_page/victory.png" alt="트로피" class="menu_trophy">
+                <img src="./images/main_page/match_schedule.png" alt="match_schedule" class="menu_match_schedule">
+                <img src="./images/main_page/lck_summer_logo.png" alt="lck_summer_logo" class="menu_lck_summer_logo">
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- home -->
+        <li class="item second">
+          <a href="./home.html"><span title="HOME" class="menu_home">HOME</span></a>
+          <div class="item__contents">
+            <div class="contents">
+              <div class="inner">
+
+                <div class="menu_facebook">
+                  <div class="front">
+                    <a href="https://www.facebook.com/T1LoL/" target="_blank">
+                      <img src="./images/main_page/facebook.png" alt="facebook" class="front_face ">
+                      <h1 class="title_face">T1 공식 페이스북</h1>
+                    </a>
+                  </div>
+                  <div class="back">
+                    <img src="./images/main_page/facebook_back.png" alt="facebook_back" class="back_face">
+                  </div>
+                </div>
+          
+                <div class="menu_youtube">
+                  <div class="front">
+                    <a href="https://www.youtube.com/channel/UCJprx3bX49vNl6Bcw01Cwfg" target="_blank">
+                      <img src="./images/main_page/youtube.png " alt="youtube" class="front_you">
+                      <h1 class="title_you">T1 공식 유튜브</h1>
+                    </a>
+                  </div>
+                  <div class="back">
+                    <img src="./images/main_page/youtube_back.png" alt="youtube_back" class="back_you">
+                  </div>
+                </div>
+          
+                <div class="menu_twitter">
+                  <div class="front">
+                    <a href="https://twitter.com/T1LoL" target="_blank">
+                      <img src="./images/main_page/twitter.png" alt="twitter" class="front_twit">
+                      <h1 class="title_twit">T1 공식 트위터</h1>
+                    </a>
+                  </div>
+                  <div class="back">
+                    <img src="./images/main_page/twitter_back.png" alt="twitter_back" class="back_twit">
+                  </div>
+                </div>
+          
+                <div class="menu_instagram">
+                  <div class="front">
+                    <a href="https://www.instagram.com/t1lol/" target="_blank">
+                      <img src="./images/main_page/instagram.png" alt="instagram" class="front_insta">
+                      <h1 class="title_insta">T1 공식 인스타그램</h1>
+                    </a>
+                  </div>
+                  <div class="back">
+                    <img src="./images/main_page/instagram_back.png" alt="instagram_back" class="back_insta">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- member -->
+        <li class="item third">
+          <a href="./member/member.html"><span title="MEMBER" class="menu_member">MEMBER</span></a>
+          <div class="item__contents">
+            <div class="contents">
+              <div class="inner">
+                <img src="./images/main_page/riot_logo.png" alt="logo" class="menu_riot-logo">
+                <img src="./images/main_page/member-image.png" alt="member" class="menu_member-image">
+                <img src="./images/main_page/memeber_font.png" alt="member" class="menu_member-font">
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="board">
+    <div class="inner">
+
+      <!-- audio
+      <audio controls autoplay loop class="audio">
+        <source src="../images/True Damage - GIANTS (ft. Becky G, Keke Palmer, SOYEON, DUCKWRTH, Thutmose) _ Le_256k.mp3" type="audio/mp3">
+        <source src="../images/K-DA - MORE ft. Madison Beer, (G)I-DLE, Lexie Liu, Jaira Burns, Seraphine (Offic_256k.mp3" type="audio/mp3">
+        <source src="../images/K-DA - POP-STARS (ft. Madison Beer, (G)I-DLE, Jaira Burns) _ Music Video - Leagu_256k.mp3" type="audio/mp3">
+      </audio> -->
+
+      <div class="main_youtube">
+        <div class="youtube__area">
+          <div id="video_player"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+</body>
+</html>

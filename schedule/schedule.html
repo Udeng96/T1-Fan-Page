@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T1 Fan Page</title>
+
+  <link rel="icon" href="../images/logo_zLe_icon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="../schedule/schedule.css">
+  <link rel="stylesheet" href="../common/common.css">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+    integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"
+    integrity="sha512-kSI9CgGh60rJbNVeMJvfNX0UTKAq8LEOea/yKJQbFpIroxT7bf9/zUFXbnfsQP5F6xlOOHtCfBPgsE1ceiHnRw=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+    integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+    crossorigin="anonymous"></script>
+
+  <!-- Swiper -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script defer src="../schedule/schedule.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Header -->
+
+  <header>
+    <div class="inner">
+      <a href="../index.html">
+        <img src="../images/titlelogo.png" alt="titlelogo" class="logo" />
+      </a>
+
+      <!-- Main-Menu -->
+
+      <ul class="main-menu">
+
+        <!-- schedule -->
+        <li class="item first">
+          <a href="../schedule/schedule.html"><span title="SCHEDULE" class="menu_schedule">SCHEDULE</span></a>
+        </li>
+
+        <!-- home -->
+        <li class="item second">
+          <a href="../home.html"><span title="HOME" class="menu_home">HOME</span></a>
+        </li>
+
+        <!-- member -->
+        <li class="item third">
+          <a href="../member/member.html"><span title="MEMBER" class="menu_member">MEMBER</span></a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Schedule -->
+
+  <section class="main_schedule">
+    <div class="calendar">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../images/t1_june_schedule.png" alt="t1_june_schedule" class="fade-in" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/t1_july_schedule.png" alt="t1_july_schedule" class="fade-in" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/t1_august_schedule.png" alt="t1_august_schedule" class="fade-in" />
+          </div>
+        </div>
+      </div>
+      <div class="swiper-prev">
+        <div class="material-icons">arrow_back</div>
+      </div>
+      <div class="swiper-next">
+        <div class="material-icons">arrow_forward</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Button & Score -->
+
+  <section class="watch_game">
+    <div class="inner">
+      <div class="watch_game_front">
+        <a href="https://www.twitch.tv/lck_korea" target="_blank" class="twitch btn">Twitch</a>
+        <a href="http://ticket.interpark.com/Contents/Promotion/2018/Event/leagueOflegendChampionsKorea" target="_blank"
+          class="interpark btn">interpark</a>
+      </div>
+      <div class="watch_game_back">
+        <a href="https://www.twitch.tv/lck_korea" target="_blank" class="twitch_back btn"> 경기 보러가기</a>
+        <a href="http://ticket.interpark.com/Contents/Promotion/2018/Event/leagueOflegendChampionsKorea" target="_blank"
+          class="interpark_back btn">직관 예매하기</a>
+      </div>
+
+      <div class="info">
+        <p class="score_info">현재 SCORE = 2 win / 1 lose / 3 rank</p>
+        <p class="ticket_info">직관 티켓팅은 경기 날짜 이틀 전, 경기 시간과 동일합니다.</p>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+
+</html>

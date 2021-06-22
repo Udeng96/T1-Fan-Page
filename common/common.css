@@ -1,0 +1,150 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  line-height: 1.4;
+  overflow: hidden;
+  background-attachment: fixed; 
+}
+
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.fade-in{
+  opacity: 0;
+}
+
+.a{
+  text-decoration: none;
+}
+
+.btn {
+  opacity: .6;
+  width: 250px;
+  padding: 10px;
+  border: 5px solid red;
+  border-radius: 4px;
+  color: blanchedalmond;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: block;
+  transition: .4s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 1;
+  background-color: black;
+  color: blanchedalmond;
+}
+
+header {
+  left: 0;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 9;
+}
+
+header>.inner {
+  height: 240px;
+  position: relative;
+  margin: 0 auto;
+
+}
+
+header .logo {
+  position: absolute;
+  width: 213px;
+  height: 143px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto auto;
+}
+
+/* menu */
+
+header .main-menu {
+  
+  width: 100%;
+  top: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0;
+  z-index: 1;
+}
+
+header .main-menu .item {
+  display: inline-block;
+  list-style: none;
+  transform-style: preserve-3d;
+  margin-left: 150px;
+}
+
+header .main-menu .item a {
+  color: white;
+  font-family: arial;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+header .main-menu .item a span {
+  display: block;
+  padding: 15px 50px;
+}
+
+header .main-menu .item a span::before {
+  content: attr(title);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #f30000;
+  color: white;
+  padding: 15px 50px;
+  transform-style: preserve-3d;
+  transition: 0.2s;
+  transform: rotateX(90deg) translateY(50px);
+  transform-origin: bottom;
+}
+
+header .main-menu .item a span:hover::before {
+  color: white;
+  transform: rotateX(0) translateY(0px);
+}
+
+header .main-menu .item a span::after {
+  content: attr(title);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  padding: 15px 50px;
+  transform-style: preserve-3d;
+  transition: 0.2s;
+  transform: rotateX(0deg) translateY(0px);
+  transform-origin: top;
+}
+
+header .main-menu .item a span:hover::after {
+  color: white;
+  transform: rotateX(90deg) translateY(-10px);
+}
+
