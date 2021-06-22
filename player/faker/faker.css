@@ -2,7 +2,7 @@
   position: absolute;
   width: 100%;
   height: 610px;
-  margin-top: 70px;
+  margin-top: 290px;
 }
 
 .zed_center{
@@ -21,9 +21,8 @@
 }
 
 .side-banner{
-  position: absolute;
-  top: 16%;
-  left: 21.5%;
+  width: 100%;
+  height: 100vh;
 }
 
 .insta{
